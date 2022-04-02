@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,15 +17,56 @@
   }
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background-color: rgb(53, 58, 63);
+}
+
+.head_text {
+  color: white;
+}
+
+.card {
+  box-shadow: none;
+  text-align: center;
+  border-width: 5px;
+  border-color: rgb(15, 34, 75);
+  border-radius: 15px;
+}
+
+.card-header {
+  border-width: 5px;
+  border-color: rgb(15, 34, 75);
+  border-radius: 15px;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead {
+      background: #3398E1;
+      text-align:center;
+      height: auto;
+      box-shadow: none;
+     
+      
+  }
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
+  max-height: 50vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
@@ -35,4 +80,109 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bg-primary {
+  background-color: rgba(0, 0, 0, 0.2)!important;
+}
+
+/* .card {
+  background-color: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  padding-bottom: 10px;
+} */
+
+/* .card-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.col {
+  margin-bottom: 10px;
+}
+
+.intro {
+
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.tech {
+  
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.share {
+  max-width: 290px;
+}
+
+.dan {
+  max-width: 250px;
+}
+
+button {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  text-align: left;
+}
+
+.btn-outline-primary {
+  display: flex;
+  justify-content: left;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+}
+
+.codeShare {
+  max-width: 200;
 }
