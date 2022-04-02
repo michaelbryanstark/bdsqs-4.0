@@ -12,7 +12,7 @@ function masthead() {
    
             <div className="App-header">
             <h1 className="welcome-text">
-                Welcome to BDS Quality Services
+                BDS Quality Services
             </h1>
             <p>Your ISO9000/AS9100 Internal Assessment Provider</p>
         </div>

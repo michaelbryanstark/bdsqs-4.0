@@ -13,6 +13,9 @@ const Welcome = (props) => {
        
         <div className="intro">
         <>
+        <h2 className="welcome-text">
+                         Welcome to BDS Quality Services
+                    </h2>
         <div class="container">
     <div class="row">
      
