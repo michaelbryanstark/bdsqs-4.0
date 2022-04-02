@@ -2,109 +2,53 @@ import React from "react";
 // import { Collapsible } from 'collapsible-react-component'
 // import 'collapsible-react-component/dist/index.css'
 import ParticlesBg from 'particles-bg'
-// import Popup from 'reactjs-popup';
-// import 'reactjs-popup/dist/index.css';
-// import Resume from "../images/Resume.jpg"
+import bryan from '../images/bryan.jpg'
+import mike from '../images/mike.jpg'
 
 const Company = (props) => {
-    const [open, setOpen] = React.useState(false)
+    // const [open, setOpen] = React.useState(false)
     return (
         <>
         <div>
-            <div className="App-header">
-            <h1 className="welcome-text">
-                Our Company
-            </h1>
-        </div>
-        <div className="tech">
-       
-        <>
-        <button
-          type='button'
-          className="btn btn-outline-secondary"
-          onClick={() => {
-            setOpen(!open)
-          }}
-        >
-          {open ? 'Close' : 'Technical Skills'}
-        </button>
-        {/* <Collapsible open={open}> */}
-            <table>
-                <tr>
-                    <td>
-                        AJAX
-                    </td>
-                    <td>
-                        Django
-                    </td>
-                     <td>
-                        EJS
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Express.js
-                    </td>
-                    <td>
-                        HTML & CSS
-                    </td>
-                    <td>
-                        JavaScript
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        jQuery 
-                    </td>
-                    <td>
-                        JSON
-                    </td>
-                    <td>
-                        JWT
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        MongoDB
-                    </td>
-                    <td>
-                        Mongoose
-                    </td>
-                    <td>
-                        MVP Frameworks
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Node.js 
-                    </td>
-                    <td>
-                        Python
-                    </td>
-                    <td>
-                        PostgreSQL
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        React 
-                    </td>
-                    <td>
-                        RESTful APIs 
-                    </td>
-                    <td>
-                        TypeScript
-                    </td>
-                </tr>
-            </table>
-        {/* </Collapsible> */}
-      </>
-        {/* <Popup trigger={<button type='button'
-          className="btn btn-outline-secondary"> Resume</button>} position="left center">
-            <div><img src={Resume} alt="Resume"/></div>
-        </Popup> */}
+                <div className="App-header">
+                    <h2 className="welcome-text">
+                         Our Company
+                    </h2>
+                </div>
+                <div className="company">
+                <div className="about">
+                    <div className="row row-cols-1 row-cols-md-3">
+                    <div className="col">
+                        <div className="card text-center h-100 bg-secondary">
+                        <div className="image">
+                            
+                            <img src={bryan} alt="bryan"/>
+                        </div>
+                            <div className="card-body">
+                                <h3 className="card-title">Bryan Stark</h3>
+                                <p className="card-text">Bryan, the founder of the company, has over 15 years of experience in Supervisor/Quality Engineering roles in Computer Engineering, Semiconductor, & Aerospace Industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="card text-center h-100 bg-secondary">
+                            <div className="image">
+                               
+                                <img className="mike" src={mike} alt="mike"/>
+                            </div>
+                            <div className="card-body">
+                                <h3 className="card-title">Michael Stark</h3>
+                                <p className="card-text">Software Engineer and Web Developer, Michael has 10+ years in project management and has overseen the developement and deployment of numerous apps across the web.</p>
+                            </div>
+                            <div>
+                            <button type='button' className="btn btn-outline-info"onClick={()=> window.open("https://www.michaelbryanstark.com/", "_blank")}>Visit Portfolio </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-         
+            </div>
         </div>
         <ParticlesBg type="cobweb" bg={true} />
         </>

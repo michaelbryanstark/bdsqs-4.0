@@ -7,6 +7,11 @@ h1 {
   color: white;
 }
 
+h2 {
+  text-align: center;
+  color: white;
+}
+
 p {
   color: white;
   text-align: center;
@@ -143,6 +148,7 @@ button {
   margin-top: 5px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 10px;
 }
 
 li {
@@ -161,4 +167,14 @@ table {
   
 }
 
+.mike {
+  max-width: 225px;
+}
+
+.about {
+  border-width: 5px;
+  border-color: rgb(15, 34, 75);
+  border-radius: 15px;
+  color: white;
+}
 

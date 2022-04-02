@@ -22,7 +22,7 @@ function Services() {
           {open ? 'Close' : 'Who am I?'}
         </button> */}
         {/* <Collapsible open={open}> */}
-        <h4>What We Offer</h4>
+        <h2 className="welcome-text">What We Offer</h2>
         <div class="container">
     <div class="row">
      
