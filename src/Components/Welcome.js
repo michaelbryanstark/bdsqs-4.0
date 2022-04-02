@@ -13,16 +13,6 @@ const Welcome = (props) => {
        
         <div className="intro">
         <>
-        {/* <button
-          type='button'
-          className="btn btn-outline-secondary"
-          onClick={() => {
-            setOpen(!open)
-          }}
-        >
-          {open ? 'Close' : 'Who am I?'}
-        </button> */}
-        {/* <Collapsible open={open}> */}
         <div class="container">
     <div class="row">
      
@@ -41,7 +31,7 @@ const Welcome = (props) => {
               </div>
          </div>
     </div>
-        {/* </Collapsible> */}
+ 
       </>
             </div>
          

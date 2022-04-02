@@ -1,109 +1,37 @@
 import React from "react";
 import ParticlesBg from 'particles-bg'
-// import codeshare from "../images/codeshare.jpg"
-// import bdsqs from "../images/bdsqs.jpg"
-// import pirate from "../images/pirate.png"
 
 
 function Certifications() {
     return(
         <>
-        <div>
-            <div className="App-header">
-            <h1 className="welcome-text">
-                Certifications
-            </h1>
-        </div>
-        <div className="tech">
-       
+        <div className="cert">
         <>
-        {/* <button
-          type='button'
-          className="btn btn-outline-secondary"
-          onClick={() => {
-            setOpen(!open)
-          }}
-        >
-          {open ? 'Close' : 'Technical Skills'}
-        </button> */}
-        {/* <Collapsible open={open}> */}
-            <table>
-                <tr>
-                    <td>
-                        AJAX
-                    </td>
-                    <td>
-                        Django
-                    </td>
-                     <td>
-                        EJS
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Express.js
-                    </td>
-                    <td>
-                        HTML & CSS
-                    </td>
-                    <td>
-                        JavaScript
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        jQuery 
-                    </td>
-                    <td>
-                        JSON
-                    </td>
-                    <td>
-                        JWT
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        MongoDB
-                    </td>
-                    <td>
-                        Mongoose
-                    </td>
-                    <td>
-                        MVP Frameworks
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Node.js 
-                    </td>
-                    <td>
-                        Python
-                    </td>
-                    <td>
-                        PostgreSQL
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        React 
-                    </td>
-                    <td>
-                        RESTful APIs 
-                    </td>
-                    <td>
-                        TypeScript
-                    </td>
-                </tr>
-            </table>
-        {/* </Collapsible> */}
+        <h2 className="welcome-text">Certifications</h2>
+        <div class="container">
+
+     
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-body">
+        <p class="card-text">
+            <h3>ASQ Certified Quality Auditor</h3>  
+                <p>Issuing authority ASQ - World Headquarters</p> 
+                    <button type='button' className="btn btn-outline-info"onClick={()=> window.open("https://credentials.asq.org/7363e433-175b-4627-9f1a-4bef135c684e", "_blank")}>See Credential</button>
+                            <br></br>
+                            <br></br>
+
+            <h3>AS9100 Rev D and ISO 9001:2015 Lead Auditor</h3> 
+                <p>Issuing authority PROBITAS</p> 
+                        </p>
+
+          
+              </div>
+         </div>
+    </div>
       </>
-        {/* <Popup trigger={<button type='button'
-          className="btn btn-outline-secondary"> Resume</button>} position="left center">
-            <div><img src={Resume} alt="Resume"/></div>
-        </Popup> */}
             </div>
          
-        </div>
+       
         <ParticlesBg type="cobweb" bg={true} />
         </>
         

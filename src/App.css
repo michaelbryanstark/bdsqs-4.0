@@ -12,16 +12,15 @@ h2 {
   color: white;
 }
 
+h3 {
+  text-align: center;
+}
+
 p {
   color: white;
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -122,13 +121,10 @@ h4 {
   color: rgb(0, 0, 0);
 }
 
-.tech {
-  
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: center;
+.cert {
 
+  padding-top: 50px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,19 +148,12 @@ button {
 }
 
 li {
-  text-align: left;
+  text-align: center;
 }
 
 .btn-outline-primary {
   display: flex;
-  justify-content: left;
-}
-
-table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  
+  justify-content: center;
 }
 
 .mike {
@@ -177,4 +166,5 @@ table {
   border-radius: 15px;
   color: white;
 }
+
 

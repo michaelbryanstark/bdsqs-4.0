@@ -8,20 +8,8 @@ import ParticlesBg from 'particles-bg'
 function Services() {
     return(
         <>
-        
-       
         <div className="intro">
         <>
-        {/* <button
-          type='button'
-          className="btn btn-outline-secondary"
-          onClick={() => {
-            setOpen(!open)
-          }}
-        >
-          {open ? 'Close' : 'Who am I?'}
-        </button> */}
-        {/* <Collapsible open={open}> */}
         <h2 className="welcome-text">What We Offer</h2>
         <div class="container">
     <div class="row">
@@ -45,7 +33,6 @@ function Services() {
               </div>
          </div>
     </div>
-        {/* </Collapsible> */}
       </>
             </div>
          

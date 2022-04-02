@@ -7,7 +7,6 @@ import emailjs from 'emailjs-com'
 
 
 const Contact = (props) => {
-    const [open, setOpen] = React.useState(false)
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -47,20 +46,15 @@ const Contact = (props) => {
             <h1 className="welcome-text">
                 Contact
             </h1>
-            {/* <img className="dan" src={selfie} alt="selfie"/> */}
+
         </div>
         <div className="intro">
         <>
-        <button
-          type='button'
-          className="btn btn-outline-secondary"
-          onClick={() => {
-            setOpen(!open)
-          }}
-        >
-          {open ? 'Close' : 'Contact'}
-        </button>
-        {/* <Collapsible open={open}> */}
+        <div class="container">
+
+     
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-body">
         <div class="row mb-3">
         <label for="exampleFormControlInput1" class="form-label">Your Name</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
@@ -72,8 +66,11 @@ const Contact = (props) => {
           className="btn btn-outline-secondary" onClick={submit}>Send Message</button>
         <span className={emailSent ? 'visible' : null}></span>
         </div>
+        </div>
+        </div>
+        </div>
             
-        {/* </Collapsible> */}
+
       </>
             </div>
          
