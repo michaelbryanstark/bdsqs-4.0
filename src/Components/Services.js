@@ -8,62 +8,48 @@ import ParticlesBg from 'particles-bg'
 function Services() {
     return(
         <>
-        <div>
-                <div className="App-header">
-                    <h1 className="welcome-text">
-                         Services
-                    </h1>
-                </div>
-                <div className="card-header">
-                    <div className="row row-cols-1 row-cols-md-3 g-4">
-                    <div className="col">
-                        <div className="card text-center h-100">
-                        <div className="image">
-                            
-                            {/* <img src={bdsqs} alt="bdsqs"/> */}
+        
+       
+        <div className="intro">
+        <>
+        {/* <button
+          type='button'
+          className="btn btn-outline-secondary"
+          onClick={() => {
+            setOpen(!open)
+          }}
+        >
+          {open ? 'Close' : 'Who am I?'}
+        </button> */}
+        {/* <Collapsible open={open}> */}
+        <h4>What We Offer</h4>
+        <div class="container">
+    <div class="row">
+     
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-body">
+        <p class="card-text">
+        <li>Consulting in the areas of Quality Management System gap analysis, development, and deployment.</li>  
+                            <br></br>
+                        <li>Performance of internal (first party) and external (second party) audits to include AS 9100, ISO 9001, ISO 13485 and ANSI/ESD 20.20.</li>  
+                            <br></br>
+                        <li>Quality training to include internal auditing, ISO 9001, and AS 9100 .</li> 
+                            <br></br>
+                        <li>Consulting in supplier development and improvement.</li>
+                            <br></br>
+                        <li>Web Development Services (Python, JavaScript, React, Django, PostgreSQL, Node.js, MongoDB, REST APIs, HTML, CSS, jQuery, JSON, JSON Web Tokens)</li>
+                        </p>
+                        
                         </div>
-                            <div className="card-body">
-                                <h3 className="card-title">BDS Quality Services</h3>
-                                <p className="card-text">Built using the Django framework and Python. BDS Quality Services is a company that provides quality assurance training and compliance.</p>
-                            </div>
-                            <div>
-                                <button type='button' className="btn btn-outline-secondary"onClick={()=> window.open("https://bdsqs.net", "_blank")}>Visit BDS Quality Services!</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="card text-center h-100">
-                            <div className="image">
-                               
-                                {/* <img className="share" src={codeshare} alt="codeshare"/> */}
-                            </div>
-                            <div className="card-body">
-                                <h3 className="card-title">CodeShare</h3>
-                                <p className="card-text">Full stack React app built for developers to share code. Features full CRUD built using JavaScript, Node.js, CSS, MongoDB/Mongoose, JWT-based Authentication.</p>
-                            </div>
-                            <div>
-                            <button type='button' className="btn btn-outline-secondary"onClick={()=> window.open("https://codeshare-app3.herokuapp.com/login", "_blank")}>Visit CodeShare!</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="card text-center h-100">
-                            <div className="image">
-                                {/* <img className="dan" src={pirate} alt="new"/> */}
-                                
-                            </div>
-                            <div className="card-body">
-                                <h3 className="card-title">The Penalty Box</h3>
-                                <p className="card-text">Personal Blog with full CRUD built using the Django Framework and Python. Users can sign up leave comments on blog posts.</p>
-                            </div>
-                            <div>
-                            <button type='button' className="btn btn-outline-secondary"onClick={()=> window.open("https://penalty-box.herokuapp.com/", "_blank")}>Visit The Penalty Box!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          
+              </div>
+         </div>
+    </div>
+        {/* </Collapsible> */}
+      </>
             </div>
-        </div>
+         
+       
         <ParticlesBg type="cobweb" bg={true} />
         </>
         

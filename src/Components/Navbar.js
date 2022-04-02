@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
+import logo9 from "../images/logo9.png";
 
 const navbar = () => (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img className='logo' src={logo9} alt="logo"/>
         <Link className="navbar-brand" to='/'>BDSQS</Link>
         <button 
             className="navbar-toggler"
