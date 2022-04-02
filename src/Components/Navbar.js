@@ -23,14 +23,14 @@ const navbar = () => (
                 {/* <li className="nav-item active">
                     <NavLink className="nav-link" exact to='/'>Home <span className="sr-only">(current)</span></NavLink>
                 </li> */}
-                <li className="nav-item">
-                    <NavLink className="nav-link" exact to='/company'>Company</NavLink>
+                 <li className="nav-item">
+                    <NavLink className="nav-link" exact to='/services'>Services</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink className="nav-link" exact to='/certifications'>Certifications</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink className="nav-link" exact to='/services'>Services</NavLink>
+                    <NavLink className="nav-link" exact to='/company'>Company</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink className="nav-link" exact to='/contact'>Contact</NavLink>
