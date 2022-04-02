@@ -1,10 +1,14 @@
 import React from 'react';
-// import backgroundImage from "../images/finalHeader3.jpg";
+import finalHeader3 from "../images/finalHeader3.jpg";
 
 function masthead() {
     
     return (
-        <div class="masthead">
+        <div className="masthead" style={{
+            backgroundImage: `url(${finalHeader3})`,
+            backgroundSize: 'cover',
+            overflow: 'hidden',
+          }}>
    
             <div className="App-header">
             <h1 className="welcome-text">
