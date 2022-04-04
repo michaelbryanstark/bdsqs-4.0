@@ -11,7 +11,7 @@ const Welcome = (props) => {
         <>
         
        
-        <div className="intro">
+        <div className="cert">
         <>
         <h2 className="welcome-text">
                          Welcome to BDS Quality Services

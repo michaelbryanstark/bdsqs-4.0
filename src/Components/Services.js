@@ -8,7 +8,7 @@ import ParticlesBg from 'particles-bg'
 function Services() {
     return(
         <>
-        <div className="intro">
+        <div className="cert">
         <h2 className="welcome-text">What We Offer</h2>
         <>
         
