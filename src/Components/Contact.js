@@ -42,13 +42,13 @@ const Contact = (props) => {
     return (
         <>
         <div>
-            <div className="App-header">
-            <h1 className="welcome-text">
+            <div className="intro">
+            <h2 className="welcome-text">
                 Contact
-            </h1>
+            </h2>
 
         </div>
-        <div className="intro">
+        <div>
         <>
         <div class="container">
 

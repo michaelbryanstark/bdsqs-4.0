@@ -9,8 +9,9 @@ function Services() {
     return(
         <>
         <div className="intro">
-        <>
         <h2 className="welcome-text">What We Offer</h2>
+        <>
+        
         <div class="container">
     <div class="row">
      
