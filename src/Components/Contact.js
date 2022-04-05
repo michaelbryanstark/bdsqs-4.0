@@ -43,35 +43,30 @@ const Contact = (props) => {
         <>
         <div>
             <div className="intro">
-            <h2 className="welcome-text">
-                Contact
-            </h2>
-
-        </div>
-        <div>
+                <h2 className="welcome-text">Contact</h2>
+            </div>
+                 <div>
         <>
-        <div className="container">
-        <div className="card text-white bg-secondary mb-3">
-                <div className="card-body">
-                    <div className="row mb-3">
-                        <label for="exampleFormControlInput1" className="form">Your Name</label>
-                        <input type="text" className="form-control mb-3" id="exampleFormControlInput1" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
-                        <label for="exampleFormControlInput1" className="form">Your Email</label>
-                        <input type="email" className="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com" value={email} onChange={e => setEmail(e.target.value)} />
-                        <label for="exampleFormControlTextarea1" className="form">Your message</label>
-                        <textarea className="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-                        <div className='col text-center'>
-                            <button type='button' className="btn btn-outline-info" onClick={submit}>Send Message</button>
-                                <span className={emailSent ? 'visible' : null}></span>
+                    <div className="container">
+                        <div className="card text-white bg-secondary mb-3">
+                            <div className="card-body">
+                                <div className="row mb-3">
+                                    <label for="exampleFormControlInput1" className="form">Your Name</label>
+                                    <input type="text" className="form-control mb-3" id="exampleFormControlInput1" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
+                                    <label for="exampleFormControlInput1" className="form">Your Email</label>
+                                    <input type="email" className="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com" value={email} onChange={e => setEmail(e.target.value)} />
+                                    <label for="exampleFormControlTextarea1" className="form">Your message</label>
+                                    <textarea className="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                                        <div className='col text-center'>
+                                            <button type='button' className="btn btn-outline-dark" onClick={submit}>Send Message</button>
+                                                <span className={emailSent ? 'visible' : null}></span>
+                                        </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-        </div>
-        </div>
-            
-
         </>
-        </div>
+                </div>
         </div>
         <ParticlesBg type="cobweb" bg={true} />
         </>

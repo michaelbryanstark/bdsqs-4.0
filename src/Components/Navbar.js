@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
 import logo9 from "../images/logo9.png";
 
