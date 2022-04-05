@@ -6,7 +6,7 @@ import logo9 from "../images/logo9.png";
 const navbar = () => (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <img className='logo' src={logo9} alt="logo"/>
-        <Link className="navbar-brand" to='/'>BDSQS</Link>
+
         <button 
             className="navbar-toggler"
             type="button"
@@ -20,9 +20,9 @@ const navbar = () => (
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-                {/* <li className="nav-item active">
-                    <NavLink className="nav-link" exact to='/'>Home <span className="sr-only">(current)</span></NavLink>
-                </li> */}
+                <li className="nav-item">
+                    <NavLink className="nav-link" exact to='/'>Home</NavLink>
+                </li>
                  <li className="nav-item">
                     <NavLink className="nav-link" exact to='/services'>Services</NavLink>
                 </li>
