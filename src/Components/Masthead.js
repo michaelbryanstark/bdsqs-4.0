@@ -11,12 +11,10 @@ function masthead() {
           }}>
    
             <div className="App-header">
-            <h1 className="welcome-text">
-                BDS Quality Services
-            </h1>
-            <p>Your ISO9000/AS9100 Internal Assessment Provider</p>
+                <h1 className="welcome-text">BDS Quality Services</h1>
+                    <p>Your ISO9000/AS9100 Internal Assessment Provider</p>
+            </div>
         </div>
-                </div>
   
 
     )
