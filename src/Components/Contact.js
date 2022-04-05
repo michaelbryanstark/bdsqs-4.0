@@ -13,7 +13,7 @@ const Contact = (props) => {
     const [emailSent, setEmailSent] = useState(false);
     const submit = () => {
       if (name && email && message) {
-        const serviceId = 'service_2rh69zk';
+        const serviceId = 'service_epsajjp';
         const templateId = 'template_ighzcwc';
         const userId = 'GWelQe7mDCutjawxE';
         const templateParams = {
@@ -56,15 +56,18 @@ const Contact = (props) => {
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-body">
         <div class="row mb-3">
+           
         <label for="exampleFormControlInput1" class="form-label">Your Name</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
         <label for="exampleFormControlInput1" class="form-label">Your Email</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value={email} onChange={e => setEmail(e.target.value)} />
         <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+        <div className='col text-center'>
         <button type='button'
-          className="btn btn-outline-secondary" onClick={submit}>Send Message</button>
+          className="btn btn-outline-info" onClick={submit}>Send Message</button>
         <span className={emailSent ? 'visible' : null}></span>
+        </div>
         </div>
         </div>
         </div>
