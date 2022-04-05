@@ -1,11 +1,11 @@
 import React from 'react';
-import finalHeader3 from "../images/finalHeader3.jpg";
+import header from "../images/header.jpg";
 
 function masthead() {
     
     return (
         <div className="masthead" style={{
-            backgroundImage: `url(${finalHeader3})`,
+            backgroundImage: `url(${header})`,
             backgroundSize: 'cover',
             overflow: 'hidden',
           }}>
