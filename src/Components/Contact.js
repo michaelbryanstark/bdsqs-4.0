@@ -13,7 +13,7 @@ const Contact = (props) => {
     const [emailSent, setEmailSent] = useState(false);
     const submit = () => {
       if (name && email && message) {
-        const serviceId = 'service_epsajjp';
+        const serviceId = 'service_qvjekje';
         const templateId = 'template_ighzcwc';
         const userId = 'GWelQe7mDCutjawxE';
         const templateParams = {
