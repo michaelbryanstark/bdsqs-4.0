@@ -25,7 +25,7 @@ const Welcome = (props) => {
                         </div>
                     </div>
                 </div>
- 
+                <h10>Copyright BDSQS</h10>
         </>
         </div>
          
