@@ -59,7 +59,7 @@ const Contact = (props) => {
                                     <label for="exampleFormControlTextarea1" className="form">Your message</label>
                                     <textarea className="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                                         <div className='col text-center'>
-                                            <button type='button' className="btn btn-outline-dark" onClick={submit}>Send Message</button>
+                                            <button type='button' className="btn btn-outline-info" onClick={submit}>Send Message</button>
                                                 <span className={emailSent ? 'visible' : null}></span>
                                         </div>
                                 </div>

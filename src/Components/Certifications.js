@@ -14,7 +14,7 @@ function Certifications() {
                     <p class="card-text">
                         <h3>ASQ Certified Quality Auditor</h3>  
                             <p>Issuing authority ASQ - World Headquarters</p> 
-                                <button type='button' className="btn btn-outline-dark"onClick={()=> window.open("https://credentials.asq.org/7363e433-175b-4627-9f1a-4bef135c684e", "_blank")}>See Credential</button>
+                                <button type='button' className="btn btn-outline-info"onClick={()=> window.open("https://credentials.asq.org/7363e433-175b-4627-9f1a-4bef135c684e", "_blank")}>See Credential</button>
                             <br></br>
                             <br></br>
 

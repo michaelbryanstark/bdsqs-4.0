@@ -37,7 +37,7 @@ const Company = (props) => {
                                 <p className="card-text">Software Engineer and Web Developer, Michael has 10+ years in project management and has overseen the developement and deployment of numerous apps across the web.</p>
                         </div>
                             <div>
-                                <button type='button' className="btn btn-outline-dark"onClick={()=> window.open("https://www.michaelbryanstark.com/", "_blank")}>Visit Portfolio </button>
+                                <button type='button' className="btn btn-outline-info"onClick={()=> window.open("https://www.michaelbryanstark.com/", "_blank")}>Visit Portfolio </button>
                             </div>
                         </div>
                     </div>
