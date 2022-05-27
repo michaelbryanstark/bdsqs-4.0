@@ -15,18 +15,21 @@ function Services() {
         <div class="container">
     <div class="row">
      
-            <div class="card text-white bg-secondary mb-3">
+            <div class="card text-white text-lrft bg-secondary mb-3">
                 <div class="card-body">
-        <p class="card-text">
-        <li>Consulting in the areas of Quality Management System gap analysis, development, and deployment.</li>  
-                            <br></br>
-                        <li>Performance of internal (first party) and external (second party) audits to include AS 9100, ISO 9001, ISO 13485 and ANSI/ESD 20.20.</li>  
-                            <br></br>
-                        <li>Quality training to include internal auditing, ISO 9001, and AS 9100 .</li> 
-                            <br></br>
-                        <li>Consulting in supplier development and improvement.</li>
-                            <br></br>
-                        <li>Web Development Services (Python, JavaScript, React, Django, PostgreSQL, Node.js, MongoDB, REST APIs, HTML, CSS, jQuery, JSON, JSON Web Tokens)</li>
+        <p class="text-left">
+                        <ul>
+                            <li>Consulting in the areas of Quality Management System gap analysis, development, and deployment.</li>  
+                            
+                            <li>Performance of internal (first party) and external (second party) audits to include AS 9100, ISO 9001, ISO 13485 and ANSI/ESD 20.20.</li>  
+                            
+                            <li>Quality training to include internal auditing, ISO 9001, and AS 9100 .</li> 
+                             
+                            <li>Consulting in supplier development and improvement.</li>
+                            
+                            <li>Web Development Services (Python, JavaScript, React, Django, PostgreSQL, Node.js, MongoDB, REST APIs, HTML, CSS, jQuery, JSON, JSON Web Tokens)</li>
+                        </ul>
+
                         </p>
                         
                         </div>
