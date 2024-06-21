@@ -1,6 +1,8 @@
 import React from "react";
 import servicesBg from '../images/servicesBg.jpg'
 
+
+
 function Certifications() {
   
     return (
