@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from './hocs/Layout';
-// import Header from './hocs/Header'
+import Footer from './hocs/Footer'
 
 import Welcome from './Components/Welcome';
 import Company from './Components/Company';
@@ -22,7 +22,7 @@ const App = () => (
             </Routes>
         
         </Layout>
-
+        <Footer></Footer>
     </Router>
 );
 export default App;
