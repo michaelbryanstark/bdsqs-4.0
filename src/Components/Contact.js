@@ -1,8 +1,4 @@
 import React, { useState } from 'react'
-// import { Collapsible } from 'collapsible-react-component'
-// import 'collapsible-react-component/dist/index.css'
-
-// import selfie from "../images/selfie.jpg"
 import emailjs from 'emailjs-com'
 import contactBg from '../images/contactBg.jpg'
 
