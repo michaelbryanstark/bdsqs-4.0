@@ -1,5 +1,5 @@
 import React from "react";
-import ParticlesBg from 'particles-bg'
+
 // import codeshare from "../images/codeshare.jpg"
 // import bdsqs from "../images/bdsqs.jpg"
 // import pirate from "../images/pirate.png"
@@ -41,7 +41,7 @@ function Services() {
             </div>
          
        
-        <ParticlesBg type="cobweb" bg={true} />
+     
         </>
         
     )

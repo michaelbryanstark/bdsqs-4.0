@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 // import { Collapsible } from 'collapsible-react-component'
 // import 'collapsible-react-component/dist/index.css'
-import ParticlesBg from 'particles-bg'
+
 // import selfie from "../images/selfie.jpg"
 import emailjs from 'emailjs-com'
+import contactBg from '../images/contactBg.jpg'
 
 
 const Contact = (props) => {
@@ -42,14 +43,14 @@ const Contact = (props) => {
 
     return (
         <>
-        <div>
-            <div className="intro">
-                <h2 className="welcome-text">Contact</h2>
-            </div>
+        <div className= 'companyBg' style={{backgroundImage:`url(${contactBg})`}}>
+        <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginTop: '15px', marginLeft: '30px', marginBottom: '75px'}}>
+            Contact
+            </h1>
                  <div>
         <>
                     <div className="container">
-                        <div className="card text-white bg-secondary mb-3">
+                        <div className="card mb-3" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', textAlign: 'left', marginLeft: '30px', opacity: 0.79}}>
                             <div className="card-body">
                                 <div className="row mb-3">
                                     <label for="exampleFormControlInput1" className="form">Your Name</label>
@@ -59,7 +60,7 @@ const Contact = (props) => {
                                     <label for="exampleFormControlTextarea1" className="form">Your message</label>
                                     <textarea className="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                                         <div className='col text-center'>
-                                            <button type='button' className="btn btn-outline-info" onClick={submit}>Send Message</button>
+                                            <button type='button' className="btn btn-outline-info" style={{ color: 'rgba(222, 185, 146)'}} onClick={submit}>Send Message</button>
                                                 <span className={emailSent ? 'visible' : null}></span>
                                         </div>
                                 </div>
@@ -69,7 +70,7 @@ const Contact = (props) => {
         </>
                 </div>
         </div>
-        <ParticlesBg type="cobweb" bg={true} />
+
         </>
     );
 };
