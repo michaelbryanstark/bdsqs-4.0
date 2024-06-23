@@ -19,7 +19,7 @@ const navbar = () => (
             <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-        <h1 className="welcome-text"> BDS Quality Services </h1>
+        <h1 className="welcome-text" style={{ color: 'rgba(39, 41, 64)'}}> BDS Quality Services </h1>
             <ul className="navbar-nav" >
                 <li className="nav-item">
                     <NavLink className="nav-link" exact to='/'>Home</NavLink>

@@ -40,7 +40,7 @@ const Contact = (props) => {
     return (
     <>
         <div className= 'companyBg' style={{backgroundImage:`url(${contactBg})`}}>
-            <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
+            <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
                 Contact
             </h1>
                 <div className="contactWrapper">

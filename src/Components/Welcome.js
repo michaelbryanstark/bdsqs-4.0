@@ -59,7 +59,7 @@ const Welcome = (props) => {
                     </div>           
                 </div>
             </div>
-            <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'center', marginTop: '100px', marginBottom: '50px'}}>
+            <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'center', marginTop: '100px', marginBottom: '50px'}}>
                 Services
             </h1>
                 <div className="serviceBg" style={{backgroundImage:`url(${serviceBg})`}}>
@@ -91,7 +91,7 @@ const Welcome = (props) => {
                 </div>
 
             <>
-            <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'center', marginTop: '100px', marginBottom: '50px'}}>
+            <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'center', marginTop: '100px', marginBottom: '50px'}}>
                 Contact
             </h1>
                 <div className= 'companyBg' style={{backgroundImage:`url(${contactBg})`}}>
