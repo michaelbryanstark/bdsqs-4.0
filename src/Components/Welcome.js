@@ -3,12 +3,10 @@ import "../App.css";
 import homeImg from '../images/homeImg.jpg'
 import serviceBg from '../images/serviceBg.jpg'
 
-
-
-
 const Welcome = (props) => {
     return (
         <div>
+            
             <div  className="companyBg" style={{backgroundImage:`url(${homeImg})`}}>
                 
                     <div className="cert">               
@@ -61,6 +59,7 @@ const Welcome = (props) => {
                     </div>
                 </div>
                 </div>
+                
         </div>
 )
 };

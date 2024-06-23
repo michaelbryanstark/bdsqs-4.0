@@ -7,7 +7,7 @@ import codeBg from '../images/codeBg.jpg'
 const Company = (props) => {
     return (
         <div className="companyBg" style={{backgroundImage:`url(${codeBg})`}}>
-            <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginTop: '15px', marginLeft: '30px', marginBottom: '75px'}}>
+            <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
             Company
             </h1>
             <div className="company">

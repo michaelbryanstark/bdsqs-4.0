@@ -8,7 +8,7 @@ function Certifications() {
     return (
 
         <div className= 'companyBg' style={{backgroundImage:`url(${servicesBg})`}}>
-        <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginTop: '15px', marginLeft: '30px', marginBottom: '75px'}}>
+        <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
         Certifications
         </h1>
         <div className="cert">  
