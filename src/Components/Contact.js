@@ -43,10 +43,10 @@ const Contact = (props) => {
         <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
             Contact
             </h1>
-                 <div>
-        <>
+                 <div className="contactWrapper">
+        <div className="cert">
                     <div className="container">
-                        <div className="card mb-3" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', textAlign: 'left', marginLeft: '30px', opacity: 0.79}}>
+                        <div className="cardServices mb-3" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', textAlign: 'left', marginLeft: '30px', opacity: 0.79}}>
                             <div className="card-body">
                                 <div className="row mb-3">
                                     <label for="exampleFormControlInput1" className="form">Your Name</label>
@@ -63,7 +63,7 @@ const Contact = (props) => {
                             </div>
                         </div>
                     </div>
-        </>
+        </div>
                 </div>
         </div>
 

@@ -56,6 +56,11 @@ body {
   justify-content: flex-end;
 }
 
+.contactWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .card-intro {
   max-width: 500px;
 }
