@@ -4,6 +4,8 @@ import homeImg from '../images/homeImg.jpg'
 import serviceBg from '../images/serviceBg.jpg'
 import emailjs from 'emailjs-com'
 import contactBg from '../images/contactBg.jpg'
+import { MdConnectWithoutContact } from "react-icons/md";
+import { HiCpuChip } from "react-icons/hi2";
 
 
 
@@ -60,7 +62,7 @@ const Welcome = (props) => {
                 </div>
             </div>
             <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'center', marginTop: '100px', marginBottom: '50px'}}>
-                Services
+                <HiCpuChip className="App-logo"/>  Services
             </h1>
                 <div className="serviceBg" style={{backgroundImage:`url(${serviceBg})`}}>
                     <div className="wrapper">
@@ -92,7 +94,7 @@ const Welcome = (props) => {
 
             <>
             <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'center', marginTop: '100px', marginBottom: '50px'}}>
-                Contact
+                <MdConnectWithoutContact className="App-logo"/> Contact
             </h1>
                 <div className= 'companyBg' style={{backgroundImage:`url(${contactBg})`}}>
                     <div className="contactWrapper">

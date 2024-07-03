@@ -3,12 +3,13 @@ import { SocialIcon } from 'react-social-icons';
 import bryan from '../images/bryan.jpg'
 import mike from '../images/mike.jpg'
 import codeBg from '../images/codeBg.jpg'
+import { HiBuildingOffice } from "react-icons/hi2";
 
 const Company = (props) => {
     return (
         <div className="companyBg" style={{backgroundImage:`url(${codeBg})`}}>
             <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
-                Company
+            <HiBuildingOffice className="App-logo"/>Company
             </h1>
             <div className="company">
                     <div className="about">

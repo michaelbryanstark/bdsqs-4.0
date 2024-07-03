@@ -1,5 +1,6 @@
 import React from "react";
 import servicesBg from '../images/servicesBg.jpg'
+import { BiCertification } from "react-icons/bi";
 
 
 
@@ -9,7 +10,7 @@ function Certifications() {
 
         <div className= 'companyBg' style={{backgroundImage:`url(${servicesBg})`}}>
         <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
-        Certifications
+        <BiCertification className="App-logo"/>Certifications
         </h1>
         <div className="cert">  
         <div className="wrapper">

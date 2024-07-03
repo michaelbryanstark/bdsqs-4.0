@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import contactBg from '../images/contactBg.jpg'
+import { MdConnectWithoutContact } from "react-icons/md";
 
 
 const Contact = (props) => {
@@ -41,7 +42,7 @@ const Contact = (props) => {
     <>
         <div className= 'companyBg' style={{backgroundImage:`url(${contactBg})`}}>
             <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
-                Contact
+            <MdConnectWithoutContact className="App-logo"/>Contact
             </h1>
                 <div className="contactWrapper">
                     <div className="cert">
