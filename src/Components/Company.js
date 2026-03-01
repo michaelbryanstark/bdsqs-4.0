@@ -21,7 +21,7 @@ const Company = (props) => {
                                     </div>
                                 <div className="card-body">
                                     <h3 className="card-title">Bryan Stark</h3>
-                                        <p className="card-text">Bryan, the founder of the company, has over 15 years of experience in Supervisor/Quality Engineering roles in Computer Engineering, Semiconductor, & Aerospace Industry.</p>
+                                        <p className="card-text">Bryan, the founder of the company, has over 20 years of experience in Supervisor/Quality Engineering roles in Computer Engineering, Semiconductor, & Aerospace Industry.</p>
                                         <SocialIcon className="nav-item" fgColor="white" bgColor="rgba(0, 171, 252,.8)" url="https://www.linkedin.com/in/bdstark2000/" target="_blank" />
                                 </div>
                             </div>
