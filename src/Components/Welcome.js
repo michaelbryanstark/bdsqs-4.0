@@ -48,8 +48,8 @@ const Welcome = (props) => {
                             <div class="cardHome mb-3" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', textAlign: 'left', opacity: 0.79, padding: '15px'}}>
                                 <h2 style={{textAlign: 'left', marginBottom: '30px'}}>Welcome to BDS Quality Services
                                 </h2>
-                                    <div class="card-intro">
-                                        <p class="card-text" style={{textAlign: 'left'}}>
+                                    <div class="card-intro"style={{miaxWidth: 100}}>
+                                        <p class="card-text" style={{textAlign: 'left' }}>
                                             When you come to BDS Quality Services, you can expect exceptional knowledge of numerous Quality Assurance Programs utilizing ISO 9001:2015 & AS9100D, which include internal assessments and surveillance audits of suppliers. 
                                             What we as a company can offer includes, but is not limited to, QA Process Development which include SPC, Guage R&R studies, DFMEA, & PFMEA Development. 
                                             Here at BDS Quality Services we are productive, multi-task oriented, adapt well to change, and are meticulous. We excel at troubleshooting, problem-solving, and decision-making. 
@@ -69,7 +69,7 @@ const Welcome = (props) => {
                         <div className="cert">
                             <div class="container">
                                 <div class="row">
-                                    <div class="cardServices mb-3" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', opacity: 0.79, padding: '15px'}}>
+                                    <div class="cardServices mb-3" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', opacity: 0.79, padding: '1px'}}>
                                         <div class="card-intro">
                                             <p class="card-text" style={{textAlign: 'right'}}>
                                                 <ul>

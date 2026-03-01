@@ -8,6 +8,7 @@
 
 } 
 
+
 h1 {
   text-align: center;
   color: rgb(39, 41, 64);
@@ -57,6 +58,16 @@ body {
   margin-right: 10px;
 }
 
+.card-text {
+  box-shadow: 5px 5px 5px #3398E1;
+  text-align: center;
+  border-width: 5px;
+  border-color: rgb(15, 34, 75);
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .wrapper {
   display: flex;
   justify-content: flex-end;
@@ -68,7 +79,7 @@ body {
 }
 
 .card-intro {
-  max-width: 500px;
+  max-width: 800px;
 }
 
 .card-header {
