@@ -64,7 +64,7 @@ const Company = (props) => {
                                 </div>
                                 <div className="card-body">
                                     <h3 className="card-title">Michael Stark</h3>
-                                    <p className="card-text">Software Engineer and Web Developer, Michael has 10+ years in project management and has overseen the developement and deployment of numerous apps across the web. Currently he is studying Cybersecurity in order to help defend against the new threats to our systems AI poses. </p>
+                                    <p className="card-text">Software Engineer and Web Developer, Michael has 10+ years in project management and has overseen the developement and deployment of numerous apps across the web. Currently he is studying Cybersecurity in order to help defend against the new threats to our systems AI poses. Main goal is your data stays secure. </p>
                                 </div>
                                 <div>
                                     <button type='button' className="btn btn-outline-info" style={{ color: 'rgba(222, 185, 146)' }} onClick={() => window.open("https://www.michaelbryanstark.com/", "_blank")}>Visit Portfolio </button>
