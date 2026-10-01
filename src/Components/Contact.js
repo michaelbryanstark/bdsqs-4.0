@@ -11,44 +11,44 @@ const Contact = (props) => {
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
     const submit = () => {
-      if (name && email && message) {
-        const serviceId = 'service_05hf1qj';
-        const templateId = 'template_azdiyjk';
-        const userId = 'GWelQe7mDCutjawxE';
-        const templateParams = {
-            name,
-            email,
-            message
-        };
+        if (name && email && message) {
+            const serviceId = 'service_05hf1qj';
+            const templateId = 'template_azdiyjk';
+            const userId = 'GWelQe7mDCutjawxE';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
 
-        emailjs.send(serviceId, templateId, templateParams, userId)
-            .then(response => console.log(response))
-            .then(error => console.log(error));
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
             alert("Message Sent!");
-  
-          setName('');
-          setEmail('');
-          setMessage('');
-          setEmailSent(false);
-      } else {
-          alert('Please fill in all fields.');
-      }
-  }
-//   const isValidEmail = email => {
-//     const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     return regex.test(String(email).toLowerCase());
-// };
+
+            setName('');
+            setEmail('');
+            setMessage('');
+            setEmailSent(false);
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
+    //   const isValidEmail = email => {
+    //     const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    //     return regex.test(String(email).toLowerCase());
+    // };
 
     return (
-    <>
-        <div className= 'companyBg' style={{backgroundImage:`url(${contactBg})`}}>
-            <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
-            <MdConnectWithoutContact className="App-logo"/>Contact
-            </h1>
+        <>
+            <div className='companyBg' style={{ backgroundImage: `url(${contactBg})` }}>
+                <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px' }}>
+                    <MdConnectWithoutContact className="App-logo" />Contact
+                </h1>
                 <div className="contactWrapper">
                     <div className="cert">
                         <div className="container">
-                            <div className="cardServices mb-3" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', textAlign: 'left', marginLeft: '30px', opacity: 0.79}}>
+                            <div className="cardServices mb-3" style={{ color: 'rgba(222, 185, 146)', background: 'rgba(15, 34, 75)', textAlign: 'left', marginLeft: '30px', opacity: 0.79 }}>
                                 <div className="card-body">
                                     <div className="row mb-3">
                                         <label for="exampleFormControlInput1" className="form">Your Name</label>
@@ -57,55 +57,31 @@ const Contact = (props) => {
                                         <input type="email" className="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com" value={email} onChange={e => setEmail(e.target.value)} />
                                         <label for="exampleFormControlTextarea1" className="form">Your message</label>
                                         <textarea className="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-                                            <div className='col text-center'>
-                                                <button type='button' className="btn btn-outline-info" style={{ color: 'rgba(222, 185, 146)'}} onClick={submit}>Send Message</button>
-                                                    <span className={emailSent ? 'visible' : null}></span>
-                                                   
-                                            </div>
+                                        <div className='col text-center'>
+                                            <button type='button' className="btn btn-outline-info" style={{ color: 'rgba(222, 185, 146)' }} onClick={submit}>Send Message</button>
+                                            <span className={emailSent ? 'visible' : null}></span>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
-            <br></br>
-             <br></br>
-              <br></br>
-               <br></br>
                 <br></br>
-                 <br></br>   
-            <br></br>
-        </div>
-        <>
-            <div  className="companyBg" style={{backgroundImage:`url(${homeImg})`}}>                
-                <div className="cert">               
-                    <div class="container">
-                        <div class="row">
-                            <div class="cardHome mb-3" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', textAlign: 'left', opacity: 0.79, padding: '15px'}}>
-                                <h2 style={{textAlign: 'center', marginBottom: '30px'}}>BDS Quality Services
-                                </h2>
-                                    <div class="card-intro">
-                                        <p class="card-text" style={{textAlign: 'left' }}>
-
-
-                                            
-                                            When you come to BDS Quality Services, you can expect exceptional knowledge of numerous Quality Assurance Programs utilizing ISO 9001:2015 & AS9100D, which include internal assessments and surveillance audits of suppliers. 
-                                            What we as a company can offer includes, but is not limited to, QA Process Development which include SPC, Guage R&R studies, DFMEA, & PFMEA Development. 
-                                            Here at BDS Quality Services we are productive, multi-task oriented, adapt well to change, and are meticulous. We excel at troubleshooting, problem-solving, and decision-making. 
-                                            We come with a strong working knowledge of JMP, RELEX, Word, Excel, Powerpoint, Windows, Microsoft Outlook, Lotus Notes, E-mail, SAP, & Oracle to suit your every need.
-                                        </p>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>           
-                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
             </div>
+
+
+
         </>
 
-
-    </>
-    
     );
 };
 
