@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { SocialIcon } from 'react-social-icons';
 import bryan from '../images/bryan.jpg'
 import mike from '../images/mike.jpg'
@@ -9,101 +9,101 @@ import emailjs from 'emailjs-com'
 import contactBg from '../images/contactBg.jpg'
 
 const Company = (props) => {
-        const [name, setName] = useState('');
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
     const submit = () => {
-      if (name && email && message) {
-        const serviceId = 'service_05hf1qj';
-        const templateId = 'template_azdiyjk';
-        const userId = 'GWelQe7mDCutjawxE';
-        const templateParams = {
-            name,
-            email,
-            message
-        };
+        if (name && email && message) {
+            const serviceId = 'service_05hf1qj';
+            const templateId = 'template_azdiyjk';
+            const userId = 'GWelQe7mDCutjawxE';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
 
-        emailjs.send(serviceId, templateId, templateParams, userId)
-            .then(response => console.log(response))
-            .then(error => console.log(error));
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
             alert("Message Sent!");
-  
-          setName('');
-          setEmail('');
-          setMessage('');
-          setEmailSent(false);
-      } else {
-          alert('Please fill in all fields.');
-      }
-  }
+
+            setName('');
+            setEmail('');
+            setMessage('');
+            setEmailSent(false);
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
     return (
-        <div className="companyBg" style={{backgroundImage:`url(${codeBg})`}}>
-            <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px'}}>
-            <HiBuildingOffice className="App-logo"/>Company
+        <div className="companyBg" style={{ backgroundImage: `url(${codeBg})` }}>
+            <h1 className="font-face-gm" style={{ color: 'rgba(222, 185, 146)', textAlign: 'left', marginLeft: '30px', marginBottom: '75px' }}>
+                <HiBuildingOffice className="App-logo" />Company
             </h1>
             <div className="company">
-                    <div className="about">
-                        <div className="row row-cols-1 row-cols-md-3">
-                            <div className="col">
-                                <div className="cardCompany text-center h-100" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', marginLeft: '30px', opacity: 0.8}}>
-                                    <div className="image">
-                                        <img className="profilePicBryan" src={bryan} alt="bryan"/>
-                                    </div>
+                <div className="about">
+                    <div className="row row-cols-1 row-cols-md-3">
+                        <div className="col">
+                            <div className="cardCompany text-center h-100" style={{ color: 'rgba(222, 185, 146)', background: 'rgba(15, 34, 75)', marginLeft: '30px', opacity: 0.8 }}>
+                                <div className="image">
+                                    <img className="profilePicBryan" src={bryan} alt="bryan" />
+                                </div>
                                 <div className="card-body">
                                     <h3 className="card-title">Bryan Stark</h3>
-                                        <p className="card-text">Bryan, the founder of the company, has over 20 years of experience in Supervisor/Quality Engineering roles in Computer Engineering, Semiconductor, & Aerospace Industry.</p>
-                                        <SocialIcon className="nav-item" fgColor="white" bgColor="rgba(0, 171, 252,.8)" url="https://www.linkedin.com/in/bdstark2000/" target="_blank" />
+                                    <p className="card-text">Bryan, the founder of the company, has over 20 years of experience in Supervisor/Quality Engineering roles in Computer Engineering, Semiconductor, & Aerospace Industry.</p>
+                                    <SocialIcon className="nav-item" fgColor="white" bgColor="rgba(0, 171, 252,.8)" url="https://www.linkedin.com/in/bdstark2000/" target="_blank" />
                                 </div>
                             </div>
                         </div>
-                    <div className="col">
-                        <div className="cardCompany text-center h-100" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', opacity: 0.9}}>
-                            <div className="image">
-                                <img className="profilePicMike" src={mike} alt="mike" style={{opacity: 1}}/>
-                            </div>
-                        <div className="card-body">
-                            <h3 className="card-title">Michael Stark</h3>
-                                <p className="card-text">Software Engineer and Web Developer, Michael has 10+ years in project management and has overseen the developement and deployment of numerous apps across the web.</p>
-                        </div>
-                            <div>
-                                <button type='button' className="btn btn-outline-info" style={{ color: 'rgba(222, 185, 146)'}} onClick={()=> window.open("https://www.michaelbryanstark.com/", "_blank")}>Visit Portfolio </button>
+                        <div className="col">
+                            <div className="cardCompany text-center h-100" style={{ color: 'rgba(222, 185, 146)', background: 'rgba(15, 34, 75)', opacity: 0.9 }}>
+                                <div className="image">
+                                    <img className="profilePicMike" src={mike} alt="mike" style={{ opacity: 1 }} />
+                                </div>
+                                <div className="card-body">
+                                    <h3 className="card-title">Michael Stark</h3>
+                                    <p className="card-text">Software Engineer and Web Developer, Michael has 10+ years in project management and has overseen the developement and deployment of numerous apps across the web. Currently he is studying Cybersecurity in order to help defend against the new threats to our systems AI poses. </p>
+                                </div>
+                                <div>
+                                    <button type='button' className="btn btn-outline-info" style={{ color: 'rgba(222, 185, 146)' }} onClick={() => window.open("https://www.michaelbryanstark.com/", "_blank")}>Visit Portfolio </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-                                  <>
+            <>
 
-                              <div className= 'companyBg' style={{backgroundImage:`url(${contactBg})`}}>
-                                                          <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'center', marginTop: '100px', marginBottom: '50px'}}>
-                              <MdConnectWithoutContact className="App-logo"/> Contact
-                          </h1>
-                                  <div className="contactWrapper">
-                                      <div className="cert">
-                                          <div className="container">
-                                              <div className="cardServices mb-3" style={{ color: 'rgba(222, 185, 146)', background:'rgba(15, 34, 75)', textAlign: 'left', marginLeft: '30px', opacity: 0.79}}>
-                                                  <div className="card-body">
-                                                      <div className="row mb-3">
-                                                          <label for="exampleFormControlInput1" className="form">Your Name</label>
-                                                              <input type="text" className="form-control mb-3" id="exampleFormControlInput1" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
-                                                                  <label for="exampleFormControlInput1" className="form">Your Email</label>
-                                                              <input type="email" className="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com" value={email} onChange={e => setEmail(e.target.value)} />
-                                                                  <label for="exampleFormControlTextarea1" className="form">Your message</label>
-                                                              <textarea className="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-                                                          <div className='col text-center'>
-                                                              <button type='button' className="btn btn-outline-info" style={{ color: 'rgba(222, 185, 146)'}} onClick={submit}>Send Message</button>
-                                                                  <span className={emailSent ? 'visible' : null}></span>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </>
+                <div className='companyBg' style={{ backgroundImage: `url(${contactBg})` }}>
+                    <h1 className="font-face-gm" style={{ color: 'rgba(39, 41, 64)', textAlign: 'center', marginTop: '100px', marginBottom: '50px' }}>
+                        <MdConnectWithoutContact className="App-logo" /> Contact
+                    </h1>
+                    <div className="contactWrapper">
+                        <div className="cert">
+                            <div className="container">
+                                <div className="cardServices mb-3" style={{ color: 'rgba(222, 185, 146)', background: 'rgba(15, 34, 75)', textAlign: 'left', marginLeft: '30px', opacity: 0.79 }}>
+                                    <div className="card-body">
+                                        <div className="row mb-3">
+                                            <label for="exampleFormControlInput1" className="form">Your Name</label>
+                                            <input type="text" className="form-control mb-3" id="exampleFormControlInput1" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
+                                            <label for="exampleFormControlInput1" className="form">Your Email</label>
+                                            <input type="email" className="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com" value={email} onChange={e => setEmail(e.target.value)} />
+                                            <label for="exampleFormControlTextarea1" className="form">Your message</label>
+                                            <textarea className="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                                            <div className='col text-center'>
+                                                <button type='button' className="btn btn-outline-info" style={{ color: 'rgba(222, 185, 146)' }} onClick={submit}>Send Message</button>
+                                                <span className={emailSent ? 'visible' : null}></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </>
         </div>
     )
 };
