@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import contactBg from '../images/contactBg.jpg'
 import { MdConnectWithoutContact } from "react-icons/md";
-import homeImg from '../images/homeImg.jpg'
+// import homeImg from '../images/homeImg.jpg'
 
 
 const Contact = (props) => {
