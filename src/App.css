@@ -86,6 +86,10 @@ a { color: inherit; }
   max-width: 1080px; margin: 0 auto;
   padding: clamp(4rem, 14vw, 9rem) clamp(1rem, 4vw, 3rem);
 }
+.masthead__logo {
+  display: block; width: clamp(96px, 20vw, 150px); height: auto;
+  margin-bottom: 1.5rem;
+}
 .masthead h1 {
   font-size: clamp(2.5rem, 8vw, 5.25rem);
   font-weight: 700; letter-spacing: -0.02em;

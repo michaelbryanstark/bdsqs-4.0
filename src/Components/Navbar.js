@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
-import logo9 from '../images/logo9.png';
+import favicon from '../images/favicon.png';
 
 // React Router v6: `end` matches exactly. On v5, replace `end` with `exact`.
 const links = [
@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <nav className="site-nav" aria-label="Main">
       <NavLink to="/" className="site-nav__brand" onClick={() => setOpen(false)}>
-        <img src={logo9} alt="" />
+        <img src={favicon} alt="" />
         <span>BDS Quality Services</span>
       </NavLink>
       <button className="site-nav__toggle" type="button" aria-expanded={open}
