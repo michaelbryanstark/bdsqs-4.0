@@ -9,7 +9,8 @@ const services = [
   'Internal (first party) and external (second party) audits, including AS 9100, ISO 9001, ISO 13485, and ANSI/ESD 20.20.',
   'Quality training, including internal auditing, ISO 9001, and AS 9100.',
   'Consulting in supplier development and improvement.',
-  'Web development (Python, JavaScript, React, Django, PostgreSQL, Node.js, MongoDB, REST APIs, HTML, CSS, jQuery, JSON, JSON Web Tokens).',
+  'Web, iOS, and Android app development (Swift, Kotlin, React Native)',
+  'Cybersecurity: MacOS, Windows & Windows Server, Linux, Network & Systems Security'
 ];
 
 function Welcome() {

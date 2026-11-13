@@ -32,8 +32,7 @@ function Company() {
                             <h3>Michael Stark</h3>
                             <p>
                                 Software engineer and web developer with 10+ years in project management, who
-                                has overseen the development and deployment of numerous web apps. He is
-                                currently studying cybersecurity to help defend systems against the new threats
+                                has overseen the development and deployment of numerous web apps. Currently studying cybersecurity to help defend systems and networks against the ever expanding threat network and the new threats
                                 AI poses.
                             </p>
                             <a className="btn btn--ghost" href="https://www.michaelbryanstark.com/"
