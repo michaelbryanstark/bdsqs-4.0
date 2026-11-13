@@ -1,10 +1,9 @@
 import React from 'react';
 
-
-const footer = (props) => (
-    <div classname= 'copyright'>
-       <h5>© BDS Quality services 2024</h5>
-    </div>
+const Footer = () => (
+  <footer className="site-footer">
+    <p className="copyright">© {new Date().getFullYear()} BDS Quality Services</p>
+  </footer>
 );
 
-export default footer
+export default Footer;

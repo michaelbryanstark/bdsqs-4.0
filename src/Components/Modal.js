@@ -1,31 +1,28 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
-const Modal = ({
-    clickedImg,
-    setClickedImg,
+function Modal({ clickedImg, setClickedImg, alt = 'Credential' }) {
+  const closeRef = useRef(null);
+  const close = () => setClickedImg(null);
 
-    // item
-  }) => {
-    const handleClick = (e) => {
-      if (e.target.classList.contains("dismiss")) {
-        setClickedImg(null);
-        // setclickedimgtext
-      }
+  useEffect(() => {
+    const onKey = (e) => e.key === 'Escape' && setClickedImg(null);
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    closeRef.current?.focus();
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
     };
-  
-    return (
-      <>
-        <div className="overlay dismiss" onClick={handleClick}>
-        <span className="dismiss" onClick={handleClick}>
-            X
-          </span>
-          <img src={clickedImg} alt="bigger pic" />
-          {/* add text for image here */}
-          {/* <h2 className="font-face-gm" style={{ color: '#fa7f67', textAlign: 'left', fontWeight: '100', fontSize: '15px'}}>{item.text}</h2> */}
+  }, [setClickedImg]);
 
-        </div>
-      </>
-    );
-  };
-  
-  export default Modal;
+  return (
+    <div className="overlay" role="dialog" aria-modal="true" aria-label={alt} onClick={close}>
+      <button ref={closeRef} className="overlay__close" type="button" aria-label="Close" onClick={close}>
+        ×
+      </button>
+      <img src={clickedImg} alt={alt} onClick={(e) => e.stopPropagation()} />
+    </div>
+  );
+}
+
+export default Modal;

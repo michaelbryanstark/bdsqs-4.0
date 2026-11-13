@@ -1,23 +1,15 @@
 import React from 'react';
-import bg2 from "../images/bg2.jpg";
+import bg2 from '../images/bg2.jpg';
 
-function masthead() {
-    
-    return (
-        <div className="masthead" style={{
-            backgroundImage: `url(${bg2})`,
-            backgroundSize: 'cover',
-            overflow: 'hidden',
-          }}>
-   
-            <div className="App-header">
-                <h1 className="welcome-text"> BDS Quality Services </h1>
-                    <h5> Your ISO9000/AS9100 Internal Assessment Provider </h5>
-            </div>
-        </div>
-  
-
-    )
+function Masthead() {
+  return (
+    <header className="masthead" style={{ backgroundImage: `url(${bg2})` }}>
+      <div className="masthead__inner">
+        <h1>BDS Quality Services</h1>
+        <p>Your ISO 9001 / AS9100 internal assessment provider</p>
+      </div>
+    </header>
+  );
 }
 
-export default masthead;
+export default Masthead;

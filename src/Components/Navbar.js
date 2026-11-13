@@ -1,46 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
-import logo9 from "../images/logo9.png";
+import logo9 from '../images/logo9.png';
 
-const navbar = () => (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <img className='logo' src={logo9} alt="logo"/>
+// React Router v6: `end` matches exactly. On v5, replace `end` with `exact`.
+const links = [
+  { to: '/', label: 'Home' },
+  { to: '/certifications', label: 'Certifications' },
+  { to: '/company', label: 'Company' },
+  { to: '/contact', label: 'Contact' },
+];
 
-        <button 
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-        <h1 className="welcome-text" style={{ color: 'rgba(39, 41, 64)'}}> BDS Quality Services </h1>
-            <ul className="navbar-nav" >
-                <li className="nav-item">
-                    <NavLink className="nav-link" exact to='/'>Home</NavLink>
-                </li>
-                 {/* <li className="nav-item">
-                    <NavLink className="nav-link" exact to='/services'>Services</NavLink>
-                </li> */}
-                <li className="nav-item">
-                    <NavLink className="nav-link" exact to='/certifications'>Certifications</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink className="nav-link" exact to='/company'>Company</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink className="nav-link" exact to='/contact'>Contact</NavLink>
-                </li>
-            </ul>
-            
-            <SocialIcon className="nav-item ml-auto" url="https://www.linkedin.com/in/bdstark2000/" target="_blank" />
-        </div>
+function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <nav className="site-nav" aria-label="Main">
+      <NavLink to="/" className="site-nav__brand" onClick={() => setOpen(false)}>
+        <img src={logo9} alt="" />
+        <span>BDS Quality Services</span>
+      </NavLink>
+      <button className="site-nav__toggle" type="button" aria-expanded={open}
+        aria-controls="site-nav-links" onClick={() => setOpen((o) => !o)}>
+        {open ? 'Close' : 'Menu'}
+      </button>
+      <ul id="site-nav-links" className={`site-nav__links${open ? ' is-open' : ''}`}>
+        {links.map(({ to, label }) => (
+          <li key={to}>
+            <NavLink to={to} end onClick={() => setOpen(false)}>{label}</NavLink>
+          </li>
+        ))}
+        <li>
+          <SocialIcon url="https://www.linkedin.com/in/bdstark2000/" target="_blank"
+            rel="noopener noreferrer" label="BDS Quality Services on LinkedIn"
+            style={{ height: 36, width: 36 }} />
+        </li>
+      </ul>
     </nav>
-);
+  );
+}
 
-export default navbar;
+export default Navbar;
