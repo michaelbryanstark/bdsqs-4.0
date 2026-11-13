@@ -15,45 +15,7 @@
   --font-display: "Source Serif 4", Georgia, serif;
 }
 
-<<<<<<< HEAD
 *, *::before, *::after { box-sizing: border-box; }
-=======
-.App-logo {
-  padding-top: 10px;
-  width: 5vmin;
-
-}
-
-
-h1 {
-  text-align: center;
-  color: rgb(39, 41, 64);
-  border-radius: 15px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-h5 {
-  text-align: center;
-  padding-top: 5rem;
-  color: rgb(222, 185, 146);
-
-}
-
-h2 {
-  text-align: center;
-  color: rgb(222, 185, 146);
-}
-
-h3 {
-  text-align: center;
-}
-
-p {
-  color: white;
-  text-align: center;
-}
->>>>>>> a33d89a85e50082abcffa2a1a179e84951e4982b
 
 body {
   margin: 0;
@@ -110,7 +72,6 @@ a { color: inherit; }
   .site-nav__links { display: flex; width: auto; flex-direction: row; align-items: center; gap: 1.75rem; padding: 0; }
 }
 
-<<<<<<< HEAD
 /* ---------- Masthead (the one bold moment) ---------- */
 .masthead {
   background-size: cover; background-position: center;
@@ -133,28 +94,6 @@ a { color: inherit; }
 .masthead p {
   margin: 1.25rem 0 0; max-width: 34ch;
   font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: var(--tan);
-=======
-.card-text {
-  box-shadow: 5px 5px 5px #3398E1;
-  text-align: center;
-  border-width: 5px;
-  border-color: rgb(15, 34, 75);
-  border-radius: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: flex;
-  flex-direction: column;
-  /* stacked on phones */
-  gap: 1rem;
-  width: 100%;
-  /* fills the screen on small devices */
-  max-width: 900px;
-  /* stops growing on big screens */
-  margin: 0 auto;
-  /* centers it */
-  padding: 1rem;
-  box-sizing: border-box;
->>>>>>> a33d89a85e50082abcffa2a1a179e84951e4982b
 }
 
 /* ---------- Sections ---------- */
@@ -211,7 +150,6 @@ a { color: inherit; }
 .btn--ghost { background: transparent; color: var(--navy); border-color: var(--navy); }
 .btn--ghost:hover { background: var(--navy); color: var(--paper); }
 
-<<<<<<< HEAD
 /* ---------- Contact form ---------- */
 .panel {
   max-width: 560px; padding: clamp(1.25rem, 4vw, 2rem);
@@ -223,217 +161,6 @@ a { color: inherit; }
   font: inherit; padding: 0.6rem 0.75rem;
   border: 1px solid var(--steel); border-radius: var(--radius);
   background: var(--paper); color: var(--ink);
-=======
-.card-intro {
-  display: flex;
-  flex-direction: column;
-  /* stacked on phones */
-  gap: 1rem;
-  width: 100%;
-  /* fills the screen on small devices */
-  max-width: 900px;
-  /* stops growing on big screens */
-  margin: 0 auto;
-  /* centers it */
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.card-header {
-  border-width: 5px;
-  border-color: rgb(15, 34, 75);
-  border-radius: 15px;
-  color: white;
-}
-
-h4 {
-  text-align: center;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.logo {
-  max-width: 100px;
-  border-radius: 10px;
-}
-
-.App-header {
-
-  max-height: 50vh;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.profilePicBryan {
-  width: 240px;
-  height: 210px;
-}
-
-.profilePicMike {
-  width: 250px;
-  height: 250px;
-}
-
-.companyBg {
-  background-size: cover;
-}
-
-.serviceBg {
-  background-size: contain;
-  background-repeat: no-repeat;
-
-}
-
-.certBg {
-  background-size: cover;
-}
-
-.cardCompany {
-  box-shadow: 5px 5px 5px #3398E1;
-  text-align: center;
-  border-width: 5px;
-  border-color: rgb(15, 34, 75);
-  border-radius: 15px;
-  margin-left: 10px;
-  margin-right: 0px;
-}
-
-.cardHome {
-  box-shadow: 5px 5px 5px #3398E1;
-  text-align: center;
-  border-width: 5px;
-  border-color: rgb(15, 34, 75);
-  border-radius: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.cardServices {
-  box-shadow: 5px 5px 5px #3398E1;
-  max-width: 50rem;
-
-  border-width: 5px;
-  border-color: rgb(15, 34, 75);
-  border-radius: 15px;
-  margin-right: 10px;
-}
-
-.wrapper-home img {
-  width: 90%;
-  height: 80%;
-  margin-left: 30px;
-}
-
-.bg2 {
-  width: 100%;
-  height: 20%;
-}
-
-/* .card {
-  background-color: rgba(0, 0, 0, 0.2);
-  align-items: center;
-  padding-bottom: 10px;
-} 
-
- .card-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-.col {
-  margin-bottom: 10px;
-}
-
-.intro {
-
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
-}
-
-.cert {
-
-  padding-top: 50px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
-}
-
-.share {
-  max-width: 290px;
-}
-
-.dan {
-  max-width: 250px;
-}
-
-button {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 10px;
-}
-
-li {
-  text-align: left;
-}
-
-.btn-outline-primary {
-  display: flex;
-  justify-content: center;
-}
-
-.mike {
-  max-width: 225px;
-}
-
-.about {
-  border-width: 5px;
-  border-color: rgb(15, 34, 75);
-  border-radius: 15px;
-  color: white;
-}
-
-.masthead-text {
-  color: rgb(255, 255, 255);
-}
-
-.copyright {
-  color: rgb(39, 41, 64);
->>>>>>> a33d89a85e50082abcffa2a1a179e84951e4982b
 }
 .contact-form textarea { resize: vertical; }
 .contact-form .btn { background: var(--navy); border-color: var(--navy); color: var(--paper); }
@@ -446,12 +173,10 @@ li {
   display: flex; align-items: center; justify-content: center;
   padding: 3.5rem 1rem 1rem; background: rgba(9, 22, 51, 0.85);
 }
-
 .overlay img {
   max-width: 100%; max-height: 100%; background: var(--paper);
   border-radius: var(--radius); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
-<<<<<<< HEAD
 .overlay__close {
   position: absolute; top: 0.75rem; right: 1rem;
   width: 2.5rem; height: 2.5rem; font-size: 2rem; line-height: 1;
@@ -465,15 +190,3 @@ li {
 /* ---------- Footer ---------- */
 .site-footer { background: var(--navy-deep); border-top: 1px solid rgba(222, 185, 146, 0.25); }
 .copyright { margin: 0; padding: 1.5rem 1rem; text-align: center; color: var(--tan); font-size: 0.95rem; }
-=======
-
-.overlay>span {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 30px;
-  color: #ffffff;
-  z-index: 999;
-  cursor: pointer;
-}
->>>>>>> a33d89a85e50082abcffa2a1a179e84951e4982b
