@@ -16,9 +16,11 @@ function Company() {
                         <div>
                             <h3>Bryan Stark</h3>
                             <p>
-                                Bryan, the founder of the company, has over 20 years of experience in
-                                Supervisor and Quality Engineering roles in the computer engineering,
-                                semiconductor, and aerospace industries.
+                                Bryan, the visionary founder of the company, brings more than two decades
+                                of hands-on leadership and technical expertise to everything we do. Throughout his
+                                distinguished career, he has held key supervisory and quality engineering roles across
+                                the computer engineering, semiconductor, and aerospace industries, where precision,
+                                reliability, and excellence are non-negotiable.
                             </p>
                             <SocialIcon url="https://www.linkedin.com/in/bdstark2000/" target="_blank"
                                 rel="noopener noreferrer" label="Bryan Stark on LinkedIn"
@@ -31,9 +33,12 @@ function Company() {
                         <div>
                             <h3>Michael Stark</h3>
                             <p>
-                                Software engineer and web developer with 10+ years in project management, who
-                                has overseen the development and deployment of numerous web apps. Currently studying cybersecurity to help defend systems and networks against the ever expanding threat network and the new threats
-                                AI poses.
+                                Full Stack Developer engineering experience toward cybersecurity and IT infrastructure.
+                                With a background in Physics and Operations Management, it taught him to break complex
+                                systems into logical parts and find where they fail. As a freelance web developer, he has
+                                helped build apps for clients and seen firsthand how easily security gets overlooked under deadline pressure.
+                                Michael is now studying cybersecurity to bring a developer's perspective to systems and network security, and is
+                                currently preparing for CompTIA Security+ and Network+ certifications.
                             </p>
                             <a className="btn btn--ghost" href="https://www.michaelbryanstark.com/"
                                 target="_blank" rel="noopener noreferrer">Visit portfolio</a>
